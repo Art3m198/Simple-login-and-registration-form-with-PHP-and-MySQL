@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<title>Welcome</title>
+	</head>
+<body>
 <?php 
 	require 'db.php';
 ?>
@@ -11,10 +17,9 @@
 <?php else : 
 header('Location: login.php');?>
 
-
-
-
 <?php endif; ?>
+</body>
+</html>
 
 
 
