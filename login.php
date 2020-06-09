@@ -12,7 +12,6 @@
 			$user->password = $data['password'];
 			$user->password = password_hash($data['password'], PASSWORD_DEFAULT); 
 			R::store($user);
-			sleep(3);
 			header('Location: welcome.php');
 			exit;
 	}
