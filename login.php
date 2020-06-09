@@ -4,6 +4,18 @@
 	
 	if ( isset($data['signup']) )
 	{		
+			$errors = array();
+		if ( R::count('users', "email = ?", array($data['email'])) > 0)
+		{
+			$errors[] = 'A user with this Email already exists!';
+		}
+		if ( $data['password2'] != $data['password'] )
+		{
+			$errors[] = 'The repeated password is incorrect!';
+		}
+				if ( empty($errors) )
+		{
+	
 			$user = R::dispense('users');
 			$user->lastname = $data['lastname'];
 			$user->firstname = $data['firstname'];
@@ -14,6 +26,10 @@
 			R::store($user);
 			header('Location: welcome.php');
 			exit;
+			}else
+		{
+			echo '<div id="errors" style="color:red;">' .array_shift($errors). '</div><hr>';
+		}
 	}
 
 	if ( isset($data['login']) )
@@ -133,7 +149,12 @@ header('Location: index.php');?>
                                         <input type="password" autocomplete="off" class="form-control" name="password" placeholder="Password" required>
                                     </div>
                                 </div>
-                                    
+								                                <div class="form-group">
+                                    <label for="password2" class="col-md-3 control-label"></label>
+                                    <div class="col-md-9">
+                                        <input type="password" autocomplete="off" class="form-control" name="password2" placeholder="Password" required>
+                                    </div>
+                                </div>
                                 <div class="form-group">
                                     <!-- Button -->                         
                                     <div class="col-md-offset-3 col-md-9">
