@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `lastname` varchar(50) DEFAULT NULL,
-  `firstname` varchar(50) DEFAULT NULL,
+  `lastname` varchar(50),
+  `firstname` varchar(50),
   `group` longtext,
   `email` longtext,
   `password` longtext,
