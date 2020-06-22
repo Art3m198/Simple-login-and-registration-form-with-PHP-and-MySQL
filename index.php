@@ -6,9 +6,7 @@
 <body>
 <?php 
 	require 'db.php';
-?>
-
-<?php if ( isset ($_SESSION['logged_user']) ) : ?>
+	if ( isset ($_SESSION['logged_user']) ) : ?>
 	You are logged in! <br/>
 	Hi!<br/>
 
