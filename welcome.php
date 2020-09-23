@@ -13,15 +13,13 @@
                     <div class="panel-heading">
                     <h3 class="panel-title" align="center">Welcome</h3>
                     </div>      
-
                     <div style="padding-top:10px" class="panel-body" >  
 <p align="center">Thanks! You are successfully registered in the system! You will be automatically redirected to the login page in 5 seconds.</p>
 <p align="center">If you want, go to the page manually:
 <h3 align="center"><a href = "login.php">Login</a></h3>
 <script type="text/javascript" align="center">
 var count = 6;
-var redirect = "login.php";
-  
+var redirect = "login.php";  
 function countDown(){
     var timer = document.getElementById("timer");
     if(count > 0){
@@ -34,7 +32,6 @@ function countDown(){
 }
 </script>
 <br>
-  
 <span id="timer">
 <script type="text/javascript">countDown();</script>
 </span>
