@@ -17,6 +17,7 @@
 <p align="center">Thanks! You are successfully registered in the system! You will be automatically redirected to the login page in 5 seconds.</p>
 <p align="center">If you want, go to the page manually:
 <h3 align="center"><a href = "login.php">Login</a></h3>
+</div></div>
 <script type="text/javascript" align="center">
 var count = 6;
 var redirect = "login.php";  
@@ -35,9 +36,6 @@ function countDown(){
 <span id="timer">
 <script type="text/javascript">countDown();</script>
 </span>
-                        </div>                     
-                    </div>  
-        </div>
-    </div>
+</div></div>
 </body>
 </html>
