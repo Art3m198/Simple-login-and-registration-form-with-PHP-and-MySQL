@@ -3,7 +3,7 @@
 Simple login and registration form with PHP and MySQL
 
 - PHP, MySQL and HTML 
-- Login and registration form with save data to database.
+- Login and registration form with save data to database
 
 ## Screenshots
 
